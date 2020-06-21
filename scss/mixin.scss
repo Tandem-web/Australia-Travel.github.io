@@ -1,0 +1,54 @@
+@mixin title ($color, $coefSize){
+	color: $color;
+	font:{
+		family: 'Oswald', sans-serif;
+		size: 80px / $coefSize;
+		weight: 600;
+	}
+}
+
+@mixin subtitle ($color, $coefSize){
+	color: $color;
+	font:{
+		family: 'Arsenal', sans-serif;
+		size: 22px / $coefSize;
+		weight: 400;
+	}
+}
+
+@mixin text-massive ($color, $coefSize){
+	color: $color;
+	font:{
+		family: 'Roboto Slab', serif;
+		size: 18px / $coefSize;
+		weight: 400;
+	}
+}
+
+@mixin text ($color, $coefSize){
+	color: $color;
+	font:{
+		family: 'Roboto Slab', serif;
+		size: 24px / $coefSize;
+		weight: 400;
+	}
+}
+
+@mixin text-but ($color, $coefSize){
+	color: $color;
+	font:{
+		family: 'Roboto', sans-serif;
+		size: 16px / $coefSize;
+		weight: 700;
+	}
+}
+
+@mixin hero-text ($color, $coefSize){
+	color: $color;
+	font:{
+		family: 'Yanone Kaffeesatz', sans-serif;
+		size: 150px / $coefSize;
+		weight: 400;
+	}
+}
+
