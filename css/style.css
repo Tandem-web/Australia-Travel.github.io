@@ -402,7 +402,7 @@ header {
 .intro__intro_compass-wrapper {
   height: 580px;
   position: absolute;
-  right: -140px;
+  right: 140px;
   bottom: -149px;
   display: -webkit-box;
   display: -ms-flexbox;
