@@ -154,6 +154,7 @@ header {
   z-index: 5;
   display: none;
 }
+
 @media screen and (max-width: 960px) {
   .wrapper-menu-icon {
     width: 24px;
@@ -251,9 +252,7 @@ header {
     height: 29px;
   }
 }
-.intro{
-  overflow: hidden;
-}
+
 .nav_link, .num_link {
   display: inline-block;
 }
@@ -359,7 +358,9 @@ header {
   position: absolute;
   bottom: 80px;
 }
-
+.intro{
+  overflow: hidden;
+}
 .hero_text {
   color: #fff;
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -372,7 +373,7 @@ header {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .intro {
     margin-top: 70px;
   }
@@ -385,7 +386,6 @@ header {
 
 .intro_compass_outer-wrapper {
   background: url(../img/compass-outer.png) center no-repeat;
-  position: absolute;
   width: 574px;
   height: 580px;
 }
@@ -404,7 +404,7 @@ header {
 .intro__intro_compass-wrapper {
   height: 580px;
   position: absolute;
-  right: 140px;
+  right: -140px;
   bottom: -149px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,24 +418,24 @@ header {
 }
 @media (max-width: 1440px) {
   .intro__intro_compass-wrapper {
-    right: 100px;
+    right: -100px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .intro__intro_compass-wrapper {
-    right: 81px;
+    right: -81px;
   }
 }
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .intro__intro_compass-wrapper {
     top: -149px;
-    right: 149px;
+    right: -149px;
   }
 }
 @media (max-width: 640px) {
   .intro__intro_compass-wrapper {
     top: -149px;
-    right: 149px;
+    right: -149px;
   }
 }
 
@@ -461,7 +461,7 @@ header {
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-@media screen and (max-width: 1440px) {
+@media (max-width: 1440px) {
   .play_but {
     width: 108px;
     height: 108px;
@@ -525,17 +525,17 @@ header {
   width: -moz-fit-content;
   width: fit-content;
 }
-@media screen and (min-width: 768px) and (max-width: 1187px) {
+@media (min-width: 768px) and (max-width: 1187px) {
   .b-title_section {
     font-size: 40.8163265306px;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 900px) {
+@media (min-width: 640px) and (max-width: 900px) {
   .b-title_section {
     font-size: 57.1428571429px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .b-title_section {
     font-size: 40.8163265306px;
   }
@@ -694,22 +694,22 @@ header {
   padding: 0px 140px;
   background-color: #92E1D8;
 }
-@media screen and (min-width: 960px) and (max-width: 1440px) {
+@media (min-width: 960px) and (max-width: 1440px) {
   .benefits_wrapper {
     padding: 0px 100px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .benefits_wrapper {
     padding: 0px 81px;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 960px) {
+@media (min-width: 640px) and (max-width: 960px) {
   .benefits_wrapper {
     padding: 0px 58px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .benefits_wrapper {
     padding: 0px 41px;
   }
@@ -892,12 +892,12 @@ header {
     padding-bottom: 70px;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 960px) {
+@media (min-width: 640px) and (max-width: 960px) {
   .b-tour_card {
     padding-bottom: 53px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 640px) {
+@media (min-width: 480px) and (max-width: 640px) {
   .b-tour_card {
     padding-bottom: 111px;
   }
@@ -916,12 +916,12 @@ header {
 .tours_card__wrapper {
   padding-top: 98px;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .tours_card__wrapper {
     padding-top: 70px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .tours_card__wrapper {
     padding-top: 70px;
   }
@@ -958,7 +958,7 @@ header {
     grid-template-rows: 323px 323px 323px;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 960px) {
+@media (min-width: 640px) and (max-width: 960px) {
   .tours_card__grid {
     -ms-grid-columns: 235px 48px 235px;
     grid-template-columns: 235px 235px;
@@ -1128,7 +1128,7 @@ header {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-@media screen and (min-width: 640px) and (max-width: 960px) {
+@media (min-width: 640px) and (max-width: 960px) {
   .front, .back {
     padding: 18px 20px 20px 9px;
   }
@@ -1457,7 +1457,7 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .b-help {
     min-height: 800px;
     max-height: 960px;
@@ -1468,17 +1468,17 @@ header {
   margin-top: 98px;
   margin-right: 134px;
 }
-@media screen and (min-width: 960px) and (max-width: 1440px) {
+@media (min-width: 960px) and (max-width: 1440px) {
   .help_wrapper__container_forms {
     margin-right: 96px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1187px) {
+@media (min-width: 768px) and (max-width: 1187px) {
   .help_wrapper__container_forms {
     margin-right: 60px;
   }
 }
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .help_wrapper__container_forms {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1500,22 +1500,22 @@ header {
   margin-left: 140px;
   width: 43%;
 }
-@media screen and (min-width: 768px) and (max-width: 1187px) {
+@media (min-width: 768px) and (max-width: 1187px) {
   .b-help__wrapper {
     margin-left: 81px;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 900px) {
+@media (min-width: 640px) and (max-width: 900px) {
   .b-help__wrapper {
     margin-left: 58px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .b-help__wrapper {
     margin-left: 41px;
   }
 }
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .b-help__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1528,7 +1528,7 @@ header {
     height: auto;
   }
 }
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   .b-help__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1558,17 +1558,17 @@ header {
   margin: 0;
   font-size: 57.1428571429px;
 }
-@media screen and (min-width: 768px) and (max-width: 1187px) {
+@media (min-width: 768px) and (max-width: 1187px) {
   .help_title_section {
     font-size: 40.8163265306px;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 900px) {
+@media (min-width: 640px) and (max-width: 900px) {
   .help_title_section {
     font-size: 57.1428571429px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .help_title_section {
     font-size: 40.8163265306px;
   }
@@ -1577,17 +1577,17 @@ header {
 .help_wrapper__form_inner {
   width: 525px;
 }
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
   .help_wrapper__form_inner {
     width: 373px;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 894px) {
+@media (min-width: 640px) and (max-width: 894px) {
   .help_wrapper__form_inner {
     width: 373px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .help_wrapper__form_inner {
     width: 373px;
   }
@@ -1597,13 +1597,13 @@ header {
   margin-top: 50px;
   margin-bottom: 58px;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .help_subtitle {
     margin-bottom: 23px;
     font-size: 15.7142857143px;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 960px) {
+@media (min-width: 640px) and (max-width: 960px) {
   .help_subtitle {
     margin-top: 63px;
     margin-bottom: 29px;
@@ -1615,7 +1615,7 @@ header {
     width: 373px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .help_subtitle {
     margin-top: 53px;
     margin-bottom: 24px;
@@ -1707,7 +1707,7 @@ header {
   background-color: #114A7A;
   height: 79px;
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .b-footer {
     height: 154px;
     display: -webkit-box;
@@ -1742,7 +1742,7 @@ header {
   font-weight: 400;
   font-size: 14px;
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .copy {
     font-size: 10px;
   }
@@ -1777,12 +1777,12 @@ header {
     height: 32px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .socials {
     width: 196px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .socials {
     width: 100%;
   }
@@ -1858,7 +1858,7 @@ header {
   background: url(../img/footer/socials_icon/facebook.svg) no-repeat center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 480px) and (max-width: 800px) {
   .b-footer__wrapper_phone {
     display: -ms-grid;
     display: grid;
@@ -1883,7 +1883,7 @@ header {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 800px){
+@media (min-width: 480px) and (max-width: 800px){
   .b-footer__wrapper_phone .logo_phone {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
