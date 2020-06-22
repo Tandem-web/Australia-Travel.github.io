@@ -251,7 +251,9 @@ header {
     height: 29px;
   }
 }
-
+.intro{
+  overflow: hidden;
+}
 .nav_link, .num_link {
   display: inline-block;
 }
