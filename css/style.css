@@ -453,6 +453,7 @@ header {
 }
 
 .intro_compass_outer-wrapper {
+  position: absolute;
   background: url(../img/compass-outer.png) center no-repeat;
   width: 574px;
   height: 580px;
@@ -474,7 +475,7 @@ header {
 .intro__intro_compass-wrapper {
   height: 580px;
   position: absolute;
-  right: -140px;
+  right: 140px;
   bottom: -149px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -488,30 +489,30 @@ header {
 }
 @media (max-width: 1440px) {
   .intro__intro_compass-wrapper {
-    right: -100px;
+    right: 100px;
   }
 }
 @media screen and (max-width: 1024px) {
   .intro__intro_compass-wrapper {
-    right: -81px;
+    right: 81px;
   }
 }
 @media screen and (max-width: 960px) {
   .intro__intro_compass-wrapper {
     top: -149px;
-    right: -149px;
+    right: 149px;
   }
 }
 @media (max-width: 640px) {
   .intro__intro_compass-wrapper {
     top: -149px;
-    right: -149px;
+    right: 149px;
   }
 }
 @media (max-width: 640px) {
   .intro__intro_compass-wrapper {
     top: -179px;
-    right: -233px;
+    right: 233px;
   }
 }
 
