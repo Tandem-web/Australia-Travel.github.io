@@ -1,5 +1,3 @@
-
-
 @charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -127,12 +125,15 @@ header {
   height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
   padding: 18px 140px;
 }
@@ -177,13 +178,16 @@ header {
     height: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
+            -webkit-flex-direction: column;
             flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
+            -webkit-justify-content: space-between;
             justify-content: space-between;
     cursor: pointer;
     -webkit-transition: -webkit-transform 330ms ease-out;
@@ -247,7 +251,8 @@ header {
 
 .line-menu.end {
   -ms-flex-item-align: end;
-      align-self: flex-end;
+      -webkit-align-self: flex-end;
+          align-self: flex-end;
   -webkit-transition: -webkit-transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transition: -webkit-transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   -o-transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
@@ -367,18 +372,22 @@ header {
   .nav__inner {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     /*Стиль для удобства*/
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+        -webkit-justify-content: space-around;
+            justify-content: space-around;
     /*Стиль для удобства*/
     -webkit-box-align: center;
         -ms-flex-align: center;
+            -webkit-align-items: center;
             align-items: center;
     /*Стиль для удобства*/
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
+            -webkit-flex-direction: column;
             flex-direction: column;
     /*Стиль для удобства*/
     height: 100%;
@@ -393,9 +402,11 @@ header {
 }
 
 .intro__wrapper {
+  height: -webkit-calc(100vh - 70px);
   height: calc(100vh - 70px);
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -479,12 +490,15 @@ header {
   bottom: -149px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
 }
 @media (max-width: 1440px) {
@@ -522,12 +536,15 @@ header {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
   color: #fff;
   font-family: "Roboto Slab", serif;
@@ -863,13 +880,16 @@ header {
 .card_benefits_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
+          -webkit-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
   width: 243px;
   height: 190px;
@@ -880,9 +900,11 @@ header {
 .benefits_carousel {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
 }
 
@@ -1002,12 +1024,15 @@ header {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
 }
 
@@ -1071,7 +1096,7 @@ header {
   display: grid;
   width: 100%;
   height: 100%;
-      grid-template-areas: "tour-card-1 tour-card-2 tour-card-3" "tour-card-4 tour-card-5 tour-card-6";
+          grid-template-areas: "tour-card-1 tour-card-2 tour-card-3" "tour-card-4 tour-card-5 tour-card-6";
   -ms-grid-columns: 323px 77px 323px 77px 323px;
   grid-template-columns: 323px 323px 323px;
   -ms-grid-rows: 323px 50px 323px;
@@ -1083,7 +1108,7 @@ header {
 }
 @media (max-width: 1340px) {
   .tours_card__grid {
-        grid-template-areas: "tour-card-1 tour-card-2" "tour-card-3 tour-card-4" "tour-card-5 tour-card-6";
+            grid-template-areas: "tour-card-1 tour-card-2" "tour-card-3 tour-card-4" "tour-card-5 tour-card-6";
     -ms-grid-columns: 323px 323px;
     grid-template-columns: 323px 323px;
     -ms-grid-rows: 323px 323px 323px;
@@ -1128,7 +1153,7 @@ header {
 }
 @media (max-width: 640px) {
   .tours_card__grid {
-        grid-template-areas: "tour-card-1" "tour-card-2" "tour-card-3" "tour-card-4" "tour-card-5" "tour-card-6";
+            grid-template-areas: "tour-card-1" "tour-card-2" "tour-card-3" "tour-card-4" "tour-card-5" "tour-card-6";
     -ms-grid-columns: 323px;
     grid-template-columns: 323px;
     -ms-grid-rows: 323px 50px 323px 50px 323px 50px 323px 50px 323px 50px 323px;
@@ -1141,7 +1166,7 @@ header {
 }
 @media (max-width: 390px) {
   .tours_card__grid {
-        grid-template-areas: "tour-card-1" "tour-card-2" "tour-card-3" "tour-card-4" "tour-card-5" "tour-card-6";
+            grid-template-areas: "tour-card-1" "tour-card-2" "tour-card-3" "tour-card-4" "tour-card-5" "tour-card-6";
     -ms-grid-columns: 235px;
     grid-template-columns: 235px;
     -ms-grid-rows: 235px 50px 235px 50px 235px 50px 235px 50px 235px 50px 235px;
@@ -1373,9 +1398,11 @@ header {
   margin-top: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
 }
 
@@ -1734,6 +1761,7 @@ header {
   background-color: #1CBB9E;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 @media screen and (max-width: 960px) {
@@ -1761,13 +1789,16 @@ header {
   .help_wrapper__container_forms {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
+            -webkit-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
+            -webkit-align-items: center;
             align-items: center;
     margin: 0;
     width: 100%;
@@ -1799,9 +1830,11 @@ header {
   .b-help__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
+            -webkit-justify-content: center;
             justify-content: center;
     width: 100%;
     margin: auto 126px;
@@ -1812,9 +1845,11 @@ header {
   .b-help__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
+            -webkit-justify-content: center;
             justify-content: center;
     width: 100%;
     margin: auto auto;
@@ -1824,9 +1859,11 @@ header {
   .b-help__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
+            -webkit-justify-content: center;
             justify-content: center;
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -2017,9 +2054,11 @@ header {
 .help_wrapper__form_inner_row {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
 }
 .help_wrapper__form_inner_row .input-forms {
@@ -2039,12 +2078,15 @@ header {
     height: 154px;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
+            -webkit-justify-content: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
+            -webkit-align-items: center;
             align-items: center;
   }
 }
@@ -2053,12 +2095,15 @@ header {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
 }
 
@@ -2094,9 +2139,11 @@ header {
   width: 258px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
 }
 @media (max-width: 960px) {
@@ -2128,12 +2175,15 @@ header {
   transition: background-position 10s;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
 }
 @media (max-width: 960px) {
@@ -2194,7 +2244,7 @@ header {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-        grid-template-areas: "logo_phone" "copy_phone" "socials_phone";
+            grid-template-areas: "logo_phone" "copy_phone" "socials_phone";
     -ms-grid-columns: 185px;
     grid-template-columns: 185px;
     grid-row-gap: 15px;
@@ -2237,12 +2287,15 @@ header {
   background-color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
 }
 
@@ -2314,12 +2367,15 @@ header {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
 }
 .hide_modal_but_wrapper .hide_modal_but {
@@ -2513,7 +2569,7 @@ header {
   display: -ms-grid;
   display: grid;
   border: 1px solid #fff;
-      grid-template-areas: "price_1 price_1_info" "price_2 price_2_info" "prise_3 price_3_info";
+          grid-template-areas: "price_1 price_1_info" "price_2 price_2_info" "prise_3 price_3_info";
   -ms-grid-columns: 105px 224px;
   grid-template-columns: 105px 224px;
   -ms-grid-rows: 41px 41px 41px;
@@ -2622,13 +2678,16 @@ header {
   border: 1px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
   color: #fff;
   font-family: "Roboto Slab", serif;
@@ -2672,6 +2731,5 @@ header {
   -ms-grid-column: 2;
   grid-area: price_3_info;
 }
-
 
 /*Tandem-web, 2020*/
